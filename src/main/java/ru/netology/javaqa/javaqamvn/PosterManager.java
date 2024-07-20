@@ -6,7 +6,7 @@ public class PosterManager {
 
 
     public PosterManager() {
-       this.size = 7;
+        this.size = 7;
     }
 
     public PosterManager(int size) {
@@ -36,14 +36,14 @@ public class PosterManager {
 
     public String[] findLast() {
         int resultLength;
-        if (posters.length<size) {
+        if (posters.length < size) {
             resultLength = posters.length;
         } else {
             resultLength = size;
         }
         String[] answer = new String[resultLength];
-        for (int i = 0;i < answer.length;i++) {
-            answer[i] =posters[posters.length -1-i];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = posters[posters.length - 1 - i];
         }
         return answer;
     }

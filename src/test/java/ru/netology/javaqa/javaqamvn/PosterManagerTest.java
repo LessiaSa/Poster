@@ -61,6 +61,7 @@ public class PosterManagerTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLastLessMax() {
         PosterManager manager = new PosterManager();
@@ -68,25 +69,27 @@ public class PosterManagerTest {
         manager.addPoster("2");
         manager.addPoster("3");
         manager.addPoster("4");
-        String[] expected = {"4","3","2","1"};
+        String[] expected = {"4", "3", "2", "1"};
         String[] actual = manager.findLast();
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLastMin() {
         PosterManager manager = new PosterManager();
         manager.addPoster("1");
         String[] expected = {"1"};
         String[] actual = manager.findLast();
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLastMoveMin() {
         PosterManager manager = new PosterManager();
         manager.addPoster("1");
         manager.addPoster("2");
-        String[] expected = {"2","1"};
+        String[] expected = {"2", "1"};
         String[] actual = manager.findLast();
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 }
