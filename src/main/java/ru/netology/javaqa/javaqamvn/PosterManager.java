@@ -6,7 +6,7 @@ public class PosterManager {
 
 
     public PosterManager() {
-        this.size = 7;
+        this.size = 5;
     }
 
     public PosterManager(int size) {

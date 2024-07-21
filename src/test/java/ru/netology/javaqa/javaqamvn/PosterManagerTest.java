@@ -40,9 +40,7 @@ public class PosterManagerTest {
         manager.addPoster("Джентельмены");
         manager.addPoster("Отель Белград");
         manager.addPoster("Человек невидимка");
-        manager.addPoster("Тролли");
-        manager.addPoster("Номер один");
-        String[] expected = {"Бладшот", "Вперед", "Джентельмены", "Отель Белград", "Человек невидимка", "Тролли", "Номер один"};
+        String[] expected = {"Бладшот", "Вперед", "Джентельмены", "Отель Белград", "Человек невидимка"};
         String[] actual = manager.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -55,9 +53,7 @@ public class PosterManagerTest {
         manager.addPoster("Джентельмены");
         manager.addPoster("Отель Белград");
         manager.addPoster("Человек невидимка");
-        manager.addPoster("Тролли");
-        manager.addPoster("Номер один");
-        String[] expected = {"Номер один", "Тролли", "Человек невидимка", "Отель Белград", "Джентельмены", "Вперед", "Бладшот"};
+        String[] expected = { "Человек невидимка", "Отель Белград", "Джентельмены", "Вперед", "Бладшот"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
